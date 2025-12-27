@@ -59,8 +59,8 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.5649717514124294,
-      "y": 0.4835886214442013,
+      "x": 0.5706214689265536,
+      "y": 0.4420131291028447,
       "uniqueID": "id-16",
       "ioValues": [
         {
@@ -69,17 +69,41 @@
         },
         {
           "name": "Passes",
+          "ioValue": 5
+        },
+        {
+          "name": "Speed",
+          "ioValue": 700,
+          "currentEquation": "700"
+        },
+        {
+          "name": "Cut Through",
           "ioValue": 1,
           "currentEquation": "1"
         },
         {
-          "name": "Speed",
-          "ioValue": 700
+          "name": "Part Name",
+          "ioValue": "Lolke2 AuD",
+          "currentEquation": "Lolke2 AuD"
+        }
+      ],
+      "partName": "name",
+      "sortDirection": "Left"
+    },
+    {
+      "atomType": "Export",
+      "x": 0.6649717514124294,
+      "y": 0.4835886214442013,
+      "uniqueID": "id-24",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
         },
         {
-          "name": "Cut Through",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "name": "Resolution (dpi)",
+          "ioValue": 96
         },
         {
           "name": "Part Name",
@@ -87,8 +111,10 @@
           "currentEquation": "name"
         }
       ],
-      "partName": "name",
-      "sortDirection": "Left"
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "name"
     }
   ],
   "allConnectors": [
@@ -106,6 +132,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-12",
       "ap2ID": "id-16"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-16",
+      "ap2ID": "id-24"
     }
   ],
   "unitsKey": "MM",
