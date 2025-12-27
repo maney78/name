@@ -14,18 +14,100 @@
     },
     {
       "atomType": "Import",
-      "x": 0.24529190207156307,
-      "y": 0.5054704595185996,
+      "x": 0.24199623352165722,
+      "y": 0.4923413566739606,
       "uniqueID": "id-4",
       "fileName": "Laura in Wolke 3.svg",
       "name": "Import",
       "type": "SVG",
       "repoOwner": "maney78",
       "repoName": "name",
-      "SVGwidth": 10
+      "SVGwidth": 150
+    },
+    {
+      "atomType": "Move",
+      "x": 0.3452919020715631,
+      "y": 0.5054704595185996,
+      "uniqueID": "id-6",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 41
+        },
+        {
+          "name": "yDist",
+          "ioValue": 18
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4256120527306968,
+      "y": 0.6345733041575493,
+      "uniqueID": "id-12",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10,
+          "currentEquation": "10"
+        }
+      ]
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.5649717514124294,
+      "y": 0.4835886214442013,
+      "uniqueID": "id-16",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 3.175
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1,
+          "currentEquation": "1"
+        },
+        {
+          "name": "Speed",
+          "ioValue": 700
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "name",
+          "currentEquation": "name"
+        }
+      ],
+      "partName": "name",
+      "sortDirection": "Left"
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-6"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-12"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12",
+      "ap2ID": "id-16"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
