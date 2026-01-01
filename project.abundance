@@ -14,8 +14,8 @@
     },
     {
       "atomType": "Import",
-      "x": 0.24199623352165722,
-      "y": 0.4923413566739606,
+      "x": 0.22787193973634653,
+      "y": 0.8708971553610503,
       "uniqueID": "id-4",
       "fileName": "Laura in Wolke 3.svg",
       "name": "Import",
@@ -52,48 +52,14 @@
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 9,
-          "currentEquation": "9"
+          "ioValue": 9
         }
       ]
     },
     {
-      "atomType": "Gcode",
-      "x": 0.5706214689265536,
-      "y": 0.4420131291028447,
-      "uniqueID": "id-16",
-      "ioValues": [
-        {
-          "name": "Tool Size",
-          "ioValue": 3.175
-        },
-        {
-          "name": "Passes",
-          "ioValue": 5
-        },
-        {
-          "name": "Speed",
-          "ioValue": 700,
-          "currentEquation": "700"
-        },
-        {
-          "name": "Cut Through",
-          "ioValue": 1,
-          "currentEquation": "1"
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "Lolke2 AuD",
-          "currentEquation": "Lolke2 AuD"
-        }
-      ],
-      "partName": "name",
-      "sortDirection": "Left"
-    },
-    {
       "atomType": "Export",
-      "x": 0.6741996233521657,
-      "y": 0.45295404814004375,
+      "x": 0.5527306967984934,
+      "y": 0.4179431072210066,
       "uniqueID": "id-24",
       "ioValues": [
         {
@@ -111,10 +77,111 @@
           "currentEquation": "name"
         }
       ],
-      "type": null,
+      "type": "STL",
       "resolution": 96,
       "importIndex": 0,
       "partName": "name"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.2076271186440678,
+      "y": 0.3960612691466083,
+      "uniqueID": "id-48",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 60,
+          "currentEquation": "60"
+        },
+        {
+          "name": "y length",
+          "ioValue": 20,
+          "currentEquation": "20"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.2547080979284369,
+      "y": 0.1137855579868709,
+      "uniqueID": "id-52",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 15,
+          "currentEquation": "15"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.3286252354048964,
+      "y": 0.2844638949671772,
+      "uniqueID": "id-55"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4642184557438795,
+      "y": 0.175054704595186,
+      "uniqueID": "id-63",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 30,
+          "currentEquation": "30"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5781544256120527,
+      "y": 0.1772428884026258,
+      "uniqueID": "id-69",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 15
+        }
+      ]
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7678907721280602,
+      "y": 0.41575492341356673,
+      "uniqueID": "id-73",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "name",
+          "currentEquation": "name"
+        }
+      ],
+      "partName": "name",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -129,14 +196,34 @@
       "ap2ID": "id-12"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-12",
-      "ap2ID": "id-16"
+      "ap2Name": "geometry1",
+      "ap1ID": "id-48",
+      "ap2ID": "id-55"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-52",
+      "ap2ID": "id-55"
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-16",
+      "ap1ID": "id-55",
+      "ap2ID": "id-63"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-63",
+      "ap2ID": "id-69"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-69",
       "ap2ID": "id-24"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-69",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "MM",
